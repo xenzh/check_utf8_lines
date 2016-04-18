@@ -1,0 +1,2 @@
+normal string
+utf-8 (œ) string
