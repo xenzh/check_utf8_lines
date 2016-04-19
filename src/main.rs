@@ -15,7 +15,7 @@ fn get_utf8_lines(content: &str) -> Utf8Lines {
     for (idx, line) in content.lines().enumerate() {
         let has_utf8 = line.chars().fold(false, |acc, c| acc || c > 128 as char );
         if has_utf8 {
-            lines.push((idx, line.to_string()));
+            lines.push((idx + 1, line.to_string()));
         }
     }
     lines
